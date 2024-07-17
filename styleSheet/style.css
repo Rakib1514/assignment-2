@@ -42,6 +42,8 @@ section {
 .title-primary {
     font-size: 3rem;
     font-weight: 900;
+    margin-bottom: 16px;
+    color: #FFFFFF;
 }
 
 
@@ -63,6 +65,11 @@ section {
     margin: 0 16px;
 }
 
+
+.glass-effect {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
 
 
 
@@ -218,6 +225,43 @@ section {
     margin-bottom: 8px;
 }
 
+/* Run Extra section start here */
+/* Run Extra section start here */
+
+.run-extra {
+    max-width: 1152px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 100px auto;
+    border-radius: 18px;
+}
+
+.run-extra img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.run-extra-info {
+    max-width: 450px;
+}
+
+.run-extra-info button {
+    margin: 0 10px 24px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -256,35 +300,62 @@ section {
 
     /* habit section */
 
-    .habit-container{
+    .habit-container {
         margin-top: 20px;
     }
 
-    .habit-cards-container{
+    .habit-cards-container {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
+
+
+    /* extra run section */
+
+    .run-extra {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    /* .run-extra-info button{
+        width: 90vw;
+        margin-right: 0px;
+    } */
 
 }
 
 
 @media screen and (min-width: 577px) and (max-width:992px) {
+
+    .navbar {
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+
     .banner {
         flex-direction: column;
         align-items: center;
     }
 
-        /* habit section */
+    /* habit section */
 
-        .habit-container{
-            margin-top: 40px;
-        }
-    
-        .habit-cards-container{
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-        }
-    
+    .habit-container {
+        margin-top: 40px;
+    }
+
+    .habit-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    /* run extra section */
+
+    .run-extra {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 20px;
     }
 
 }
