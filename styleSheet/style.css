@@ -34,13 +34,19 @@ body {
 /* Shared Styles */
 
 .navbar,
-.banner {
+.banner,
+section {
     margin: 0 auto;
+}
+
+.title-primary {
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 
 .p-primary {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--p-primary-clr);
     margin-bottom: 28px;
 }
@@ -129,7 +135,7 @@ body {
 
 /* banner badge style */
 
-.banner-highlight{
+.banner-highlight {
     position: relative;
 }
 
@@ -150,11 +156,11 @@ body {
     right: 0px;
 }
 
-.support-video-btn span{
+.support-video-btn span {
     font-size: .9rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.65);
-    
+
 }
 
 .tutorial-video-btn {
@@ -172,11 +178,44 @@ body {
     left: -30px;
 }
 
-.tutorial-video-btn span{
+.tutorial-video-btn span {
     font-size: .9rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.65);
-    
+
+}
+
+
+/* habit Change section style */
+
+.habit-container {
+    max-width: 1152px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.habit-info-detail {
+    margin: 15px 0 60px;
+}
+
+.habit-card {
+    max-width: 240px;
+    text-align: center;
+}
+
+.habit-card img {
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.habit-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.habit-card figcaption h4 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
 }
 
 
@@ -191,19 +230,19 @@ body {
 
 @media screen and (max-width: 576px) {
 
-   /* hero section */
+    /* hero section */
 
-    .nav-links{
+    .nav-links {
         display: none;
     }
 
-    .banner{
+    .banner {
         flex-direction: column;
         align-items: center;
     }
 
 
-    .banner-title{
+    .banner-title {
         font-size: 2.25rem;
     }
 
@@ -211,13 +250,13 @@ body {
         margin: 0 20px;
     }
 
-    .banner-info .btn-primary{
+    .banner-info .btn-primary {
         margin: 10px;
     }
 }
 
 @media screen and (min-width: 577px) and (max-width:992px) {
-    .banner{
+    .banner {
         flex-direction: column;
         align-items: center;
     }
