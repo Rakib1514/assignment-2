@@ -251,7 +251,68 @@ section {
 }
 
 
+/* our team section style */
 
+.our-team{
+    max-width: 1152px;
+}
+
+.team-text{
+    max-width: 670px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+.trainer-img{
+    max-width: 326px;
+    height: 272px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:  rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
+    border-radius: 18px;
+    
+}
+
+.trainer-text{
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+}
+
+
+.trainer-img-container1{
+    background-image:  url(../images/trainer1.png);
+}
+.trainer-img-container2{
+    background-image: url(../images/trainer2.png);
+}
+.trainer-img-container3{
+    background-image: url(../images/trainer3.png);
+}
+.trainer-img-container4{
+    background-image: url(../images/trainer4.png);
+}
+.trainer-img-container5{
+    background-image: url(../images/trainer5.png);
+}
+.trainer-img-container6{
+    background-image: url(../images/trainer6.png);
+}
+
+
+.trainer-detail{
+    max-width: 1152px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+    border-radius: 18px;
+}
 
 
 
@@ -318,10 +379,22 @@ section {
         margin: 0 10px;
     }
 
-    /* .run-extra-info button{
-        width: 90vw;
-        margin-right: 0px;
-    } */
+    /* our team section start here */
+
+    .trainer-detail{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 20px;
+    }
+
+    .trainer-img-container5,
+    .trainer-img-container6{
+        display: none;
+    }
+
+    .trainer-name{
+        font-size: 1.25rem;
+    }
+
 
 }
 
@@ -358,4 +431,9 @@ section {
         margin: 20px 20px;
     }
 
+    /* team sectiom */
+
+    .our-team{
+        max-width: 90vw;
+    }
 }
