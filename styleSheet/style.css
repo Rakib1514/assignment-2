@@ -463,6 +463,22 @@ section,
     }
 
 
+    .footer-nav-container{
+        grid-template-columns: 1fr;
+        margin: 0 50px;
+        gap: 30px;
+    }
+    .footer-company-info{
+        grid-column: span none;
+    }
+
+    .footer-nav-title{
+        margin-bottom: 10px;
+    }
+
+
+
+
 }
 
 
@@ -502,5 +518,10 @@ section,
 
     .our-team{
         max-width: 90vw;
+    }
+
+    .footer-nav-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 40px;
     }
 }
