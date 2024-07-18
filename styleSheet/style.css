@@ -35,7 +35,8 @@ body {
 
 .navbar,
 .banner,
-section {
+section,
+.footer-container {
     margin: 0 auto;
 }
 
@@ -67,8 +68,8 @@ section {
 
 
 .glass-effect {
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(5px);
 }
 
 
@@ -153,9 +154,9 @@ section {
     color: #FFFFFF;
     font-size: 2.5rem;
     font-weight: 900;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.089);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     line-height: 28px;
     position: absolute;
@@ -175,7 +176,7 @@ section {
     color: #FFFFFF;
     font-size: 2.5rem;
     font-weight: 900;
-    background-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
@@ -313,6 +314,66 @@ section {
     padding: 30px;
     border-radius: 18px;
 }
+
+
+/* footer section style */
+
+.footer-container{
+    max-width: 1152px;
+    margin-top: 100px;
+}
+
+.footer-company-info h1{
+    color: var(--theme-clr);
+    font-size: 4.5rem;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 22px;
+}
+
+.footer-nav-title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 42px;
+}
+
+.footer-nav ul li{
+    font-size: 1.5rem;
+    list-style: none;
+    color: var(--p-primary-clr);
+    margin-bottom: 20px;
+}
+
+.footer-nav-container{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 120px;
+    padding: 80px 0;
+}
+
+.footer-company-info{
+    grid-column: span 2;
+}
+
+.footer-footer{
+    margin: 38px 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
