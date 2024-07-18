@@ -318,6 +318,7 @@ section,
 
 /* footer section style */
 
+
 .footer-container{
     max-width: 1152px;
     margin-top: 100px;
@@ -419,6 +420,11 @@ section,
     .banner-info .btn-primary {
         margin: 10px;
     }
+
+    .tutorial-video-btn{
+        left: 5px;
+    }
+
 
     /* habit section */
 
