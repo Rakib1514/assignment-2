@@ -13,11 +13,11 @@
     font-family: "Inter", sans-serif;
 }
 
-/* .header-miama-font{
+.header-miama-font {
     font-family: 'Miama', sans-serif;
     font-weight: 400;
     font-size: 5rem;
-} */
+}
 
 * {
     margin: 0;
@@ -69,11 +69,8 @@ section,
 
 .glass-effect {
     background: rgba(255, 255, 255, 0.055);
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
 }
-
-
-
 
 
 
@@ -122,6 +119,7 @@ section,
 .banner {
     display: flex;
     max-width: 1152px;
+    
 }
 
 .banner-info {
@@ -146,8 +144,6 @@ section,
 .banner-highlight {
     position: relative;
 }
-
-
 
 .support-video-btn {
     padding: 16px 24px;
@@ -193,7 +189,6 @@ section,
 
 }
 
-
 /* habit Change section style */
 
 .habit-container {
@@ -227,7 +222,6 @@ section,
 }
 
 /* Run Extra section start here */
-/* Run Extra section start here */
 
 .run-extra {
     max-width: 1152px;
@@ -251,80 +245,126 @@ section,
     margin: 0 10px 24px 0;
 }
 
+/* BMI calc Section Start here */
 
-/* our team section style */
+/* .hide{
+    display: none;
+} */
 
-.our-team{
-    max-width: 1152px;
+.bmi{
+    max-width: 75vw;
 }
 
-.team-text{
-    max-width: 670px;
-    text-align: center;
+.bmi-title-info-container{
+    max-width: 576px;
     margin: 0 auto;
 }
 
+.calc-chart table{
+    border-collapse: collapse;
+}
+
+.calc-chart table tr> th, td{
+    border: 1px solid rgba(255, 255, 255, 0.303);
+    padding: 10px 20px 15px 10px;
+    text-align: start;
+   color: var(--p-primary-clr);
+
+}
+
+.calc-chart table tr> th{
+    color: white;
+}
 
 
-.trainer-img{
-    max-width: 326px;
-    height: 272px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color:  rgba(0, 0, 0, 0.2);
-    background-blend-mode: overlay;
-    border-radius: 18px;
+
+.calc-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bmi-calc{
+    grid-column: span 2;
+}
+
+
+.bmi-calc form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     
 }
 
-.trainer-text{
-    position: absolute;
-    left: 20px;
-    bottom: 0;
+
+.bmi-calc form > input, select{
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#factor{
+    grid-column: span 2;
 }
 
 
-.trainer-img-container1{
-    background-image:  url(../images/trainer1.png);
-}
-.trainer-img-container2{
-    background-image: url(../images/trainer2.png);
-}
-.trainer-img-container3{
-    background-image: url(../images/trainer3.png);
-}
-.trainer-img-container4{
-    background-image: url(../images/trainer4.png);
-}
-.trainer-img-container5{
-    background-image: url(../images/trainer5.png);
-}
-.trainer-img-container6{
-    background-image: url(../images/trainer6.png);
-}
 
 
-.trainer-detail{
-    max-width: 1152px;
+
+
+
+
+
+
+
+
+
+
+/* our team section style */
+
+.our-team {
+    /* max-width: 75vw; */
+    text-align: center;
+}
+
+.team-container {
+    max-width: 75vw;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 30px;
-    border-radius: 18px;
+    grid-template-columns: repeat(3, 19.5vw);
+    gap: 4vw;
+    justify-content: center;
+    padding: 3vw 0;
+    border-radius: 22px;
+    background-color: rgba(255, 255, 255, 0.055);
 }
 
+.trainer-container img {
+    width: 100%;
+    border-radius: 22px;
+}
+
+.trainer-container {
+    position: relative;
+}
+
+.trainer-info {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    text-align: start;
+}
+
+.trainer-info > h4 {
+    font-size: 1.2rem;
+}
 
 /* footer section style */
 
-
-.footer-container{
+.footer-container {
     max-width: 1152px;
     margin-top: 100px;
 }
 
-.footer-company-info h1{
+.footer-company-info h1 {
     color: var(--theme-clr);
     font-size: 4.5rem;
     font-weight: 800;
@@ -332,52 +372,36 @@ section,
     margin-bottom: 22px;
 }
 
-.footer-nav-title{
+.footer-nav-title {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 42px;
 }
 
-.footer-nav ul li{
+.footer-nav ul li {
     font-size: 1.5rem;
     list-style: none;
     color: var(--p-primary-clr);
     margin-bottom: 20px;
 }
 
-.footer-nav-container{
-    
+.footer-nav-container {
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 120px;
     padding: 80px 0;
 }
 
-.footer-company-info{
+.footer-company-info {
     grid-column: span 2;
 }
 
-.footer-footer{
+.footer-footer {
     padding: 38px 0;
     font-size: 1.4rem;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -421,10 +445,9 @@ section,
         margin: 10px;
     }
 
-    .tutorial-video-btn{
+    .tutorial-video-btn {
         left: 5px;
     }
-
 
     /* habit section */
 
@@ -437,7 +460,6 @@ section,
         justify-items: center;
     }
 
-
     /* extra run section */
 
     .run-extra {
@@ -446,38 +468,43 @@ section,
         margin: 0 10px;
     }
 
-    /* our team section start here */
 
-    .trainer-detail{
+    .bmi{
+        max-width: 90vw;
+    }
+    
+    .calc-container{
         grid-template-columns: repeat(1, 1fr);
-        margin: 0 20px;
     }
 
-    .trainer-img-container5,
-    .trainer-img-container6{
+    /* our team section start here */
+
+    .team-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+        max-width: 90vw;
+    }
+
+    .trainer-6,
+    .trainer-5 {
         display: none;
     }
 
-    .trainer-name{
-        font-size: 1.25rem;
-    }
+    /* Footer Section Start Here */
 
-
-    .footer-nav-container{
+    .footer-nav-container {
         grid-template-columns: 1fr;
         margin: 0 50px;
         gap: 30px;
     }
-    .footer-company-info{
+
+    .footer-company-info {
         grid-column: span none;
     }
 
-    .footer-nav-title{
+    .footer-nav-title {
         margin-bottom: 10px;
     }
-
-
-
 
 }
 
@@ -486,19 +513,30 @@ section,
 
     .navbar {
         justify-content: space-between;
-        gap: 30px;
+        gap: 10px;
+        max-width: 85vw;
     }
 
+    .nav-link{
+        padding: 10px;
+    }
 
     .banner {
         flex-direction: column;
         align-items: center;
+    }
+    .banner-info {
+        margin: 0 20px;
     }
 
     /* habit section */
 
     .habit-container {
         margin-top: 40px;
+    }
+
+    .habit-info{
+        margin: 0 40px;
     }
 
     .habit-cards-container {
@@ -514,14 +552,28 @@ section,
         margin: 20px 20px;
     }
 
-    /* team sectiom */
 
-    .our-team{
+    .bmi{
         max-width: 90vw;
     }
-
-    .footer-nav-container{
+    
+    .calc-container{
         grid-template-columns: repeat(1, 1fr);
-        margin: 0 40px;
     }
+
+    /* team sectiom */
+
+    .team-container {
+        max-width: 95vw;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+    }
+
+    /* footer section */
+
+    .footer-nav-container {
+        grid-template-columns: 1fr;
+        margin: 0 50px;
+    }
+
 }
